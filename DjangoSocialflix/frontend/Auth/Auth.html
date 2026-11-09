@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a12">
+  <title>SocialFlix — Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../commonStyle.css">
+  <link rel="stylesheet" href="./Auth.css">
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <nav class="top-nav">
+      <a class="brand" href="../Feed/Feed.html" aria-label="SocialFlix home">
+        <span class="brand-mark">S</span><span>Social<span>Flix</span></span>
+      </a>
+      <a class="nav-link" href="../Feed/Feed.html">Explore feed <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="auth-shell">
+    <section class="auth-intro">
+      <div class="intro-orb orb-one"></div><div class="intro-orb orb-two"></div>
+      <span class="eyebrow">YOUR PEOPLE. YOUR MOMENTS.</span>
+      <h1>Share your world.<br><span>Find your vibe.</span></h1>
+      <p class="intro-copy">A place for the moments, ideas and people that make your day a little more interesting.</p>
+      <div class="intro-pills"><span>✦ Discover</span><span>◎ Connect</span><span>♡ Share</span></div>
+      <div class="intro-note"><span class="note-icon">✦</span><span><strong>Your space, your story.</strong><small>Welcome to the SocialFlix community.</small></span></div>
+    </section>
+
+    <section class="auth-forms" aria-label="Account access">
+      <div id="LoginForm" class="auth-card">
+        <div class="card-heading"><span class="card-icon">↗</span><span class="eyebrow">GOOD TO SEE YOU</span></div>
+        <h2>Welcome back</h2>
+        <p class="card-subtitle">Sign in and pick up where you left off.</p>
+        <form>
+          <label>Username<input type="text" name="username" placeholder="Enter your username" autocomplete="username" required></label>
+          <label>Password<input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required></label>
+          <button type="submit">Login <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="form-foot">New to SocialFlix? Create an account in the next card.</p>
+      </div>
+
+      <div id="SignUpForm" class="auth-card signup-card">
+        <div class="card-heading"><span class="card-icon cyan-icon">✧</span><span class="eyebrow">START SOMETHING NEW</span></div>
+        <h2>Create your account</h2>
+        <p class="card-subtitle">Join in and make this space yours.</p>
+        <form>
+          <label>Full name<input type="text" name="full_name" placeholder="Your full name" autocomplete="name"></label>
+          <label>Avatar URL<input type="url" name="avatar" placeholder="https://example.com/photo.jpg"></label>
+          <label>Username<input type="text" name="username" placeholder="Choose a username" autocomplete="username"></label>
+          <label>Password<input type="password" name="password" placeholder="Create a password" autocomplete="new-password"></label>
+          <button type="submit">Sign up <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="form-foot">Create your space and share your vibe.</p>
+      </div>
+    </section>
+    <footer class="auth-footer">© <span id="currentYear"></span> SocialFlix <span>•</span> Made for sharing moments</footer>
+  </main>
+  <script src="./Auth.js"></script>
+</body>
+</html>

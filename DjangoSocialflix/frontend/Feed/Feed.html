@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a12">
+  <title>SocialFlix — Feed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../commonStyle.css">
+  <link rel="stylesheet" href="./Feed.css">
+</head>
+<body class="feed-page">
+  <header class="site-header">
+    <nav class="top-nav">
+      <a class="brand" href="./Feed.html"><span class="brand-mark">S</span><span>Social<span>Flix</span></span></a>
+      <div class="top-search"><span>⌕</span><input type="search" placeholder="Search SocialFlix" aria-label="Search SocialFlix"></div>
+      <div class="nav-actions">
+        <a class="nav-link active" href="./Feed.html"><span>⌂</span> Feed</a>
+        <ul id="NavUl"><li><a class="btn btn-ghost" href="../Auth/Auth.html">Login / Register</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="feed-layout">
+    <aside class="left-sidebar panel">
+      <div class="sidebar-profile">
+        <div class="profile-glow">S</div>
+        <div><strong>Welcome to SocialFlix</strong><small>Your social space</small></div>
+      </div>
+      <p class="sidebar-label">MENU</p>
+      <a class="side-item selected" href="./Feed.html"><span>⌂</span> Home feed</a>
+      <a class="side-item" href="#PostContainer"><span>✧</span> Discover</a>
+      <a class="side-item" href="#PostContainer"><span>♡</span> Your moments</a>
+      <div class="sidebar-tip"><span class="tip-spark">✦</span><strong>Stay inspired</strong><p>Explore ideas, moments and creativity from the community.</p></div>
+    </aside>
+
+    <section class="feed-main">
+      <div class="feed-heading">
+        <div><span class="eyebrow">YOUR COMMUNITY</span><h1>Explore the feed<span>.</span></h1><p>Fresh moments and creative energy.</p></div>
+        <span class="live-indicator"><i></i> COMMUNITY</span>
+      </div>
+
+      <section class="stories-panel panel" aria-label="Community highlights">
+        <div class="section-title"><div><h2>Community highlights</h2><p class="muted">A little inspiration for your day</p></div><span class="highlight-label">FEATURED</span></div>
+        <div class="story-row">
+          <div class="story"><div class="story-ring add-story">＋</div><span>Your story</span></div>
+          <div class="story"><img class="story-ring" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=160&auto=format&fit=crop" alt="Community avatar"><span>Alex</span></div>
+          <div class="story"><img class="story-ring" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&auto=format&fit=crop" alt="Community avatar"><span>Sophia</span></div>
+          <div class="story"><img class="story-ring" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&auto=format&fit=crop" alt="Community avatar"><span>Daniel</span></div>
+          <div class="story"><img class="story-ring" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=160&auto=format&fit=crop" alt="Community avatar"><span>Mia</span></div>
+        </div>
+      </section>
+
+      <div class="feed-toolbar"><h2>Latest posts</h2><span class="sort-label">Showing community post</span></div>
+      <div id="PostContainer">
+        <article class="post panel">
+          <div class="post-topline"><div class="postAuthor">
+            <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=300&auto=format&fit=crop" alt="John Doe avatar">
+            <div><h3>John Doe</h3><p>@johndoe <span>·</span> <time>Just now</time></p></div>
+          </div><button class="more-button" type="button" aria-label="More post options">···</button></div>
+          <div id="postData" class="postData">
+            <p class="post-caption">Exploring modern AI and tech innovations! <span>🚀✨</span></p>
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" alt="Abstract colorful digital art">
+          </div>
+          <div class="post-stats"><span>✦ A moment worth sharing</span><span>Community post</span></div>
+          <div class="post-actions"><button type="button" class="post-action like-action"><span>♡</span> Like</button><button type="button" class="post-action"><span>▢</span> Comment</button><button type="button" class="post-action"><span>↗</span> Share</button><button type="button" class="post-action save-action" aria-label="Save post">⌑</button></div>
+        </article>
+      </div>
+      <p class="feed-disclaimer">You're viewing the sample post included with this frontend. Live posts require your existing API integration.</p>
+    </section>
+
+    <aside class="right-sidebar">
+      <div class="panel side-card"><span class="eyebrow">A DAILY REMINDER</span><h3>Make space for<br><span>good energy.</span></h3><p>Every post starts with a moment. Share yours when you're ready.</p><div class="quote-mark">“</div></div>
+      <div class="panel side-card mini-card"><h3>About SocialFlix</h3><p>A simple place to share ideas, creativity and everyday moments.</p><div class="mini-tags"><span>CREATE</span><span>CONNECT</span><span>INSPIRE</span></div></div>
+    </aside>
+  </main>
+  <script src="./Feed.js"></script>
+</body>
+</html>
