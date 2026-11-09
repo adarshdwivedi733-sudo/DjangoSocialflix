@@ -1,9 +1,11 @@
+
 {
   "version": 2,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "/Feed/Feed.html"
+      "destination": "/Feed/Feed.html",
+      "permanent": false
     }
   ]
 }
